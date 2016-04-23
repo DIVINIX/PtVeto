@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.admin.AddConstController">
+  <center>
+    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button id="submit" layoutX="140.0" layoutY="593.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#validate" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Ajouter" />
+        <Button id="submit" layoutX="540.0" layoutY="593.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#cancel" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Annuler" />
+            <Label layoutX="342.0" layoutY="92.0" text="Ajout d'une constante" />
+            <TextArea fx:id="text" layoutX="215.0" layoutY="260.0" prefHeight="200.0" prefWidth="400.0" />
+            <ComboBox fx:id="type" layoutX="215.0" layoutY="167.0" onAction="#select" prefHeight="31.0" prefWidth="171.0" promptText="Choisir un type" />
+            <Label fx:id="info" alignment="CENTER" layoutY="14.0" prefHeight="74.0" prefWidth="830.0" textFill="RED" />
+            <ComboBox fx:id="foreign" layoutX="465.0" layoutY="167.0" prefWidth="150.0" />
+            <TextField fx:id="option" layoutX="322.0" layoutY="504.0" />
+      </children>
+    </Pane>
+  </center>
+</BorderPane>

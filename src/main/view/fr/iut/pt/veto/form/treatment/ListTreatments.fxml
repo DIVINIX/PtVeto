@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.treatment.ListTreatmentsController">
+  <center>
+    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <ComboBox fx:id="owner" editable="true" layoutX="75.0" layoutY="46.0" onAction="#selectOwner" prefWidth="200.0" promptText="Client" />
+        <ComboBox fx:id="animal" layoutX="550.0" layoutY="46.0" onAction="#selectAnimal" prefWidth="200.0" promptText="Animal" />
+        <TableView fx:id="tabTreatment" layoutX="0.0" layoutY="100.0" prefHeight="620.0" prefWidth="830.0">
+          <columns>
+            <TableColumn fx:id="nameColumn" maxWidth="330.0" minWidth="130.0" prefWidth="230.0" text="Nom" />
+            <TableColumn fx:id="maladyColumn" maxWidth="300.0" minWidth="100.0" prefWidth="200.0" text="Maladie" />
+            <TableColumn fx:id="dateBeginColumn" maxWidth="150.0" minWidth="50.0" prefWidth="100.0" text="Date début" />
+            <TableColumn fx:id="dateEndColumn" maxWidth="150.0" minWidth="50.0" prefWidth="100.0" text="Date fin" />
+            <TableColumn fx:id="updateColumn" maxWidth="150.0" minWidth="50.0" prefWidth="100.0" text="Modifier" />
+            <TableColumn fx:id="detailsColumn" maxWidth="150.0" minWidth="50.0" prefWidth="100.0" text="Détails" />
+          </columns>
+        </TableView>
+      </children>
+    </Pane>
+  </center>
+</BorderPane>

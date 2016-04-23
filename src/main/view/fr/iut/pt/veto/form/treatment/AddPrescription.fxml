@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.treatment.AddPrescriptionController">
+  <center>
+    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Label layoutX="284.0" layoutY="75.0" text="Rédiger une ordonnance">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+        <ComboBox fx:id="owner" editable="true" layoutX="315.0" layoutY="150.0" onAction="#selectOwner" prefHeight="21.0" prefWidth="200.0" promptText="Client" />
+        <ComboBox fx:id="animal" layoutX="314.0" layoutY="200.0" onAction="#selectAnimal" prefHeight="21.0" prefWidth="200.0" promptText="Animal" />
+        <Button layoutX="240.0" layoutY="605.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#validate" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Ajouter" />
+        <Button layoutX="441.0" layoutY="605.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#cancel" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Annuler" />
+        <ComboBox fx:id="treatment" layoutX="315.0" layoutY="250.0" onAction="#selectTreatment" prefWidth="200.0" promptText="Traitement" />
+       	<TableView fx:id="tabProduct" layoutX="164.0" layoutY="300.0" prefHeight="200.0" prefWidth="500.0">
+        	<columns>
+            	<TableColumn fx:id="nameColumn" maxWidth="357.0" minWidth="200.0" prefWidth="348.0" text="Produit" />
+            	<TableColumn fx:id="deleteColumn" maxWidth="299.0" minWidth="142.0" prefWidth="151.0" text="Supprimer" />
+        	</columns>
+        </TableView>
+      	<ComboBox fx:id="product" layoutX="240.0" layoutY="520.0" prefWidth="200.0" promptText="Produit" />
+     	<Button layoutX="478.0" layoutY="520.0" mnemonicParsing="false" onAction="#addProduct" prefWidth="75.0" text="Ajouter" />
+      	<Button layoutX="240.0" layoutY="605.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#validate" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Ajouter" />
+      	<Button layoutX="441.0" layoutY="605.0" minHeight="14.9609375" mnemonicParsing="false" onAction="#cancel" prefHeight="31.921775000002526" prefWidth="149.99990000000253" text="Annuler" />
+      </children>
+    </Pane>
+  </center>
+</BorderPane>

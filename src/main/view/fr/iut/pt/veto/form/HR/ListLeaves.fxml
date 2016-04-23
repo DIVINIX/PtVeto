@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.HR.ListLeavesController">
+  <center>
+    <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <ComboBox fx:id="employee" layoutX="70.0" layoutY="47.0" onAction="#select" prefWidth="200.0" promptText="Employé" />
+        <TableView fx:id="tabLeave" layoutX="0.0" layoutY="120.0" prefHeight="600.0" prefWidth="830.0">
+          <columns>
+            <TableColumn fx:id="typeColumn" maxWidth="300.0" minWidth="100.0" prefWidth="200.0" text="Type" />
+            <TableColumn fx:id="dateBeginColumn" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="Date début" />
+            <TableColumn fx:id="dateEndColumn" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="Date fin" />
+            <TableColumn fx:id="supprColonne" prefWidth="104.0" text="Supprimer" />
+          </columns>
+        </TableView>
+            <Label fx:id="info" layoutX="500.0" prefHeight="100.0" prefWidth="300.0" textFill="#ff0707" />
+      </children>
+    </Pane>
+  </center>
+</BorderPane>

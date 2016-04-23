@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.admin.ListUsersController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="salaries" layoutX="-1.0" layoutY="1.0" prefHeight="720.0" prefWidth="830.0">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="90.0" text="Nom" />
+                <TableColumn fx:id="prenom" prefWidth="100.0" text="Prénom" />
+                  <TableColumn fx:id="telephone" prefWidth="82.0" text="Telephone" />
+                  <TableColumn fx:id="ville" prefWidth="60.0" text="Ville" />
+                  <TableColumn fx:id="adresse" prefWidth="97.0" text="Adresse" />
+                  <TableColumn fx:id="mail" minWidth="0.0" prefWidth="85.0" text="Mail" />
+                  <TableColumn fx:id="role" prefWidth="59.0" text="Role" />
+                  <TableColumn fx:id="identifiant" prefWidth="110.0" text="Identifiant" />
+                  <TableColumn fx:id="modColonne" prefWidth="76.0" text="Modifier" />
+                  <TableColumn fx:id="supprColonne" prefWidth="70.0" text="Retirer" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

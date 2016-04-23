@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.client.AddClientController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="392.0" layoutY="140.0" text="Ajout d'un client" />
+            <TextField fx:id="lastName" layoutX="354.0" layoutY="200.0" promptText="Nom" />
+            <TextField fx:id="firstName" layoutX="354.0" layoutY="275.0" promptText="Prénom" />
+            <TextField fx:id="telephone" layoutX="354.0" layoutY="350.0" promptText="Téléphone" />
+            <TextField fx:id="adress" layoutX="353.0" layoutY="500.0" promptText="Adresse" />
+            <TextField fx:id="mail" layoutX="353.0" layoutY="575.0" promptText="Mail" />
+            <Button layoutX="233.0" layoutY="633.0" mnemonicParsing="false" onAction="#validate" prefHeight="40.0" prefWidth="120.0" text="Confirmer" />
+            <Button layoutX="540.0" layoutY="633.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="120.0" text="Annuler" />
+            <Label fx:id="info" alignment="CENTER" prefHeight="106.0" prefWidth="830.0" textFill="#ff0707" />
+            <ComboBox fx:id="pays" layoutX="203.0" layoutY="425.0" onAction="#select" prefWidth="150.0" promptText="Pays" />
+            <ComboBox fx:id="ville" layoutX="539.0" layoutY="425.0" prefWidth="150.0" promptText="Ville" />
+         </children></Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.client.ListClientsController">
+   <center>
+      <TableView fx:id="clients" layoutY="100.0" prefHeight="720.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="lastName" prefWidth="99.0" text="Nom" />
+          <TableColumn fx:id="firstName" prefWidth="97.0" text="Prénom" />
+            <TableColumn fx:id="ville" prefWidth="104.0" text="Ville" />
+            <TableColumn fx:id="telephone" prefWidth="105.0" text="Téléphone" />
+            <TableColumn fx:id="mail" prefWidth="118.0" text="Mail" />
+            <TableColumn fx:id="detailColonne" prefWidth="105.0" text="Détails" />
+            <TableColumn fx:id="modColonne" prefWidth="105.0" text="Modifier" />
+            <TableColumn fx:id="supprColonne" prefWidth="96.0" text="Supprimer" />
+        </columns>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <Pane prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="76.0" layoutY="35.0" mnemonicParsing="false" onAction="#showMeetings" text="Afficher consultation" />
+            <Button layoutX="636.0" layoutY="35.0" mnemonicParsing="false" onAction="#addClient" text="Ajouter clients" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

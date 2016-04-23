@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.client.DetailMeetingController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="353.0" layoutY="115.0" text="Détail consultation" />
+            <Button layoutX="257.0" layoutY="601.0" mnemonicParsing="false" onAction="#cancel" text="Retour" />
+            <Button layoutX="508.0" layoutY="601.0" mnemonicParsing="false" onAction="#update" text="Modifier" />
+            <TextField fx:id="animal" layoutX="322.0" layoutY="194.0" promptText="Animal" />
+            <TextField fx:id="date" layoutX="322.0" layoutY="298.0" promptText="Date" />
+            <TextArea fx:id="desc" layoutX="215.0" layoutY="419.0" prefHeight="90.0" prefWidth="400.0" promptText="Decription consultation" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

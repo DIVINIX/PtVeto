@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.sale.ListBillsController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="388.0" layoutY="49.0" text="Factures" />
+            <TableView fx:id="tabBills" layoutY="120.0" prefHeight="600.0" prefWidth="830.0">
+              <columns>
+                <TableColumn fx:id="produitColumn" prefWidth="230.0" text="Produit" />
+                <TableColumn fx:id="clientColumn" prefWidth="150.0" text="Client" />
+                  <TableColumn fx:id="salarieColumn" prefWidth="150.0" text="Salarié" />
+                  <TableColumn fx:id="dateColumn" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="quantiteColumn" maxWidth="200.0" minWidth="100.0" prefWidth="100.0" text="Quantité" />
+                  <TableColumn fx:id="prixColumn" maxWidth="200.0" prefWidth="100.0" text="Prix" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

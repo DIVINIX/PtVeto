@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.MainDisplayController">
+   <left>
+      <BorderPane fx:id="menuContainer" prefHeight="720.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <right>
+            <Line endY="720.0" stroke="#720404" strokeWidth="5.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </left>
+   <center>
+      <BorderPane fx:id="formContainer" prefHeight="720.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label prefHeight="245.0" prefWidth="541.0" text="Veuillez sélectionner une action" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

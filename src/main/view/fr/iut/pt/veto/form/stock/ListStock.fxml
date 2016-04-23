@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.iut.pt.veto.form.stock.ListStockController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="produits" prefHeight="720.0" prefWidth="830.0">
+              <columns>
+                <TableColumn fx:id="refColonne" prefWidth="375.0" text="Référence" />
+                  <TableColumn fx:id="stockColonne" minWidth="0.0" prefWidth="132.0" text="Quantité" />
+                  <TableColumn fx:id="prixColonne" minWidth="0.0" prefWidth="118.0" text="Prix" />
+                  <TableColumn fx:id="modColonne" minWidth="0.0" prefWidth="96.0" text="Modifier" />
+                  <TableColumn fx:id="supprColonne" prefWidth="108.0" text="Retirer" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
