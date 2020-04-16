@@ -24,4 +24,7 @@ d’augmenter le périmètre d’action et de centraliser les données.
     *	Capitalisation 
     *	Outil de suivi de communication 
     *	Manuel utilisateur 
-    *	Documentation technique (STD + MCD) 
+    *	Documentation technique (STD + MCD)
+    
+### Environnement : 
+Méthode scrum, MS Project, Trello, Git, Jenkins, Java, JavaFx, JPA, MVC, IntelliJ, Maven, Scene Builder, JUnit, findbugs, PMD, Checkstyle, Cobertura 
