@@ -26,5 +26,6 @@ d’augmenter le périmètre d’action et de centraliser les données.
     *	Manuel utilisateur 
     *	Documentation technique (STD + MCD)
     
-### Environnement : 
+## Environnement :
+
 Méthode scrum, MS Project, Trello, Git, Jenkins, Java, JavaFx, JPA, MVC, IntelliJ, Maven, Scene Builder, JUnit, findbugs, PMD, Checkstyle, Cobertura 
