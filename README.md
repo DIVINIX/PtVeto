@@ -3,7 +3,7 @@
 Réalisation d’une IHM permettant la gestion numérique d’un cabinet vétérinaire. Le but était d’améliorer le système existant, 
 d’augmenter le périmètre d’action et de centraliser les données.
 
-## Réalisations :
+## Réalisations
 
 * Réalisation d’une phase de conception en amont du développement 
 *	Développement de l’IHM en Java tout en s’appuyant sur Hibernate, JPA et JavaFx 
@@ -26,6 +26,6 @@ d’augmenter le périmètre d’action et de centraliser les données.
     *	Manuel utilisateur 
     *	Documentation technique (STD + MCD)
     
-## Environnement :
+## Environnement
 
 Méthode scrum, MS Project, Trello, Git, Jenkins, Java, JavaFx, JPA, MVC, IntelliJ, Maven, Scene Builder, JUnit, findbugs, PMD, Checkstyle, Cobertura 
