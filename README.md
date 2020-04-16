@@ -10,18 +10,18 @@ d’augmenter le périmètre d’action et de centraliser les données.
 *	Mise en place de la méthode agile scrum 
 *	Mise en place d’une gestion de projet à l’aide d’outils comme MS Project et Trello 
 *	Optimisation de la qualité logicielle en 4 axes avec différents outils : 
-  * Intégration continue : Maven, Jenkins 
-  *	Gestion de version : Git 
-  *	Qualité de code : Checkstyle, findbugs, PMD 
-  *	Test unitaires : JUnit, CObertura 
+    * Intégration continue : Maven, Jenkins 
+    *	Gestion de version : Git 
+    *	Qualité de code : Checkstyle, findbugs, PMD 
+    *	Test unitaires : JUnit, CObertura 
 *	Réalisation de plusieurs rendus au cours du projet comme : 
-  *	WBS 
-  *	Suivi des risques 
-  *	PERT 
-  *	GANTT 
-  * Planning des charges 
-  *	Analyse budgétaire 
-  *	Capitalisation 
-  *	Outil de suivi de communication 
-  *	Manuel utilisateur 
-  *	Documentation technique (STD + MCD) 
+    *	WBS 
+    *	Suivi des risques 
+    *	PERT 
+    *	GANTT 
+    * Planning des charges 
+    *	Analyse budgétaire 
+    *	Capitalisation 
+    *	Outil de suivi de communication 
+    *	Manuel utilisateur 
+    *	Documentation technique (STD + MCD) 
